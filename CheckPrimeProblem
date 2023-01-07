@@ -1,10 +1,13 @@
 function checkPrime(num){
 	let check = true;
-	for(let i=1;i<=num/2;i++){
+	for(let i=2;i<=num/2;i++){
 		if(num%i==0){
 			check = false;
 			break;
 		}
 	}
-return (check)? "Yes" : "No";
+return check 
 }
+let output=checkPrime(13)
+console.log(output)
+
